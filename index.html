@@ -6,27 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Momentum</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/6c0b3ad7d7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <form class="login-form hidden">
-    <input required maxlength="15" type="text" placeholder="What is your name?">
-    <button>Log In</button>
-  </form>
-  <h1 id="greeting" class="hidden"></h1>
+  <main>
   <h2 class="clock">00:00:00</h2>
+  <section class="login-greeting">
+  <form class="login-form hidden">
+    <input required maxlength="15" type="text" placeholder="What is your name?"> 
+    <button>🎀</button>
+  </form>
+  <h1 id="greeting" class="hidden"></h1> 
+</section>
+  <section class="todo-box">
   <form class="todo-form">
     <input type="text" required placeholder="Write a To Do and Press Enter"/>
   </form>
-  <ul class="todo-list">
+  <ul class="todo-list hidden">
   </ul>
+</section>
+</main>
   <div class="quote">
     <span></span>
     <span></span>
   </div>
+
   <div class="weather">
+    <img src="" alt="">
     <span></span>
+  </div>
+    <div class="city">
     <span></span>
   </div>
   <script src="js/greeting.js"></script>

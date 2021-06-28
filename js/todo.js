@@ -21,11 +21,12 @@ function paintTodo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "✔";
     button.addEventListener("click", deleteTodo);
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+    toDoList.classList.remove("hidden");
 }
 function handleToDoSubmit(event) {
     event.preventDefault();
@@ -48,4 +49,10 @@ if(savedToDos) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintTodo);
-}
+} 
+
+const savedTodo = JSON.parse(localStorage.getItem(TODOS_KEY));
+
+if(savedTodo && savedTodo.length === 0) {
+    toDoList.classList.add("hidden");
+} 

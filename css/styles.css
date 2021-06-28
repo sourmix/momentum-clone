@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body main .clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 150px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px white;
+  color: powderblue;
+  margin: 30% 0 5% 0;
+  cursor: none;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+body main .clock:hover {
+  -webkit-animation: blink 1.5s infinite;
+          animation: blink 1.5s infinite;
+}
+
+body main .login-greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15%;
+  width: 100%;
+}
+
+body main .login-greeting button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+body main .login-greeting input {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+body main .login-greeting input::-webkit-input-placeholder {
+  text-shadow: 1px 1px midnightblue;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .login-greeting input:-ms-input-placeholder {
+  text-shadow: 1px 1px midnightblue;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .login-greeting input::-ms-input-placeholder {
+  text-shadow: 1px 1px midnightblue;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .login-greeting input::placeholder {
+  text-shadow: 1px 1px midnightblue;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .login-greeting input:focus {
+  color: lightpink;
+  outline: none;
+}
+
+body main .login-greeting input:focus::-webkit-input-placeholder {
+  color: lightpink;
+  text-shadow: none;
+}
+
+body main .login-greeting input:focus:-ms-input-placeholder {
+  color: lightpink;
+  text-shadow: none;
+}
+
+body main .login-greeting input:focus::-ms-input-placeholder {
+  color: lightpink;
+  text-shadow: none;
+}
+
+body main .login-greeting input:focus::placeholder {
+  color: lightpink;
+  text-shadow: none;
+}
+
+body main .login-greeting h1 {
+  font-size: 40px;
+  cursor: default;
+  font-weight: 600;
+  color: lightpink;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: fadeIn 0.3s linear;
+          animation: fadeIn 0.3s linear;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+body main .login-greeting h1:hover {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+body main .todo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .todo-box .todo-form {
+  margin-bottom: 10%;
+}
+
+body main .todo-box .todo-form input {
+  width: 420px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+body main .todo-box .todo-form input::-webkit-input-placeholder {
+  color: white;
+}
+
+body main .todo-box .todo-form input:-ms-input-placeholder {
+  color: white;
+}
+
+body main .todo-box .todo-form input::-ms-input-placeholder {
+  color: white;
+}
+
+body main .todo-box .todo-form input::placeholder {
+  color: white;
+}
+
+body main .todo-box .todo-form input:focus {
+  outline: none;
+}
+
+body main .todo-box .todo-list {
+  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 4px solid cornflowerblue;
+  width: 70%;
+  padding: 2%;
+  color: white;
+}
+
+body main .todo-box .todo-list li {
+  margin: 5% 0;
+  font-size: 20px;
+}
+
+body main .todo-box .todo-list li span {
+  margin-right: 5%;
+}
+
+body main .todo-box .todo-list button {
+  background-color: transparent;
+  border: none;
+  color: lime;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .todo-box .todo-list button:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+body .quote {
+  font-family: "Nanum Pen Script", cursive;
+  text-align: center;
+  font-style: italic;
+  font-size: 23px;
+}
+
+body .quote span {
+  color: white;
+  width: 100%;
+  display: block;
+  margin: 3%;
+  text-shadow: 1px 1px midnightblue;
+}
+
+body .quote span:last-child {
+  font-size: 20px;
+}
+
+body .weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 1%;
+  bottom: 0;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+body .weather img {
+  width: 60px;
+  height: 60px;
+}
+
+body .city {
+  position: fixed;
+  right: 1%;
+  top: 2%;
+  font-weight: bold;
+  color: royalblue;
+}
+
+body .hidden {
+  display: none;
+}
+
+body .bgImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/*# sourceMappingURL=styles.css.map */
