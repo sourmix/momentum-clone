@@ -431,7 +431,8 @@ body .city {
   right: 1%;
   top: 2%;
   font-weight: bold;
-  color: royalblue;
+  color: white;
+  text-shadow: 1px 1px midnightblue;
 }
 
 body .hidden {
