@@ -363,6 +363,7 @@ body main .todo-box .todo-list {
   width: 70%;
   padding: 2%;
   color: white;
+  text-shadow: 1px 1px midnightblue;
 }
 
 body main .todo-box .todo-list li {
